@@ -16,11 +16,11 @@ Make sure you have these dependencies installed before running the script.
 To use the script, follow these steps:
 
 1. Place the user list files in the appropriate directories:
-   - Microsoft 365 user list: `./downloads/user_list/ms.csv`
-   - R365 user list: `./downloads/user_list/r365.csv`
-   - Rackspace user lists: `./downloads/user_list/rackspace/*.csv`
-   - Reference user list: `./downloads/user_list/centra_ref_users.csv`
-   <!-- - Dashboard user list: `./downloads/user_list/dashboard.csv` -->
+   - Microsoft 365 user list: `./downloads/ms.csv`
+   - R365 user list: `./downloads/r365.csv`
+   - Rackspace user lists: `./downloads/rackspace/*.csv`
+   - Reference user list: `./downloads/centra_ref_users.csv`
+   <!-- - Dashboard user list: `./downloads/dashboard.csv` -->
 
 2. Run the `user_audit.py` script.
 
@@ -31,7 +31,7 @@ To use the script, follow these steps:
    - "not_in_master": Users that are in the imported file but not in the master list.
    - "not_in_file": Users that are in the master list but not in the imported file.
 
-5. The reports will be saved as an Excel file in the `./output/user_list/` directory. The file name will be based on the source of the imported file (`r365.xlsx`, `rackspace.xlsx`, `reference.xlsx`).
+5. The reports will be saved as an Excel file in the `./output/` directory. The file name will be based on the source of the imported file (`r365.xlsx`, `rackspace.xlsx`, `reference.xlsx`).
 
 6. Review the generated reports to identify duplicates and orphaned users.
 

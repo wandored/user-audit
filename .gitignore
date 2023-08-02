@@ -32,3 +32,5 @@ __pycache__/
 # Miscellaneous
 .DS_Store
 Thumbs.db
+/downloads
+/output
